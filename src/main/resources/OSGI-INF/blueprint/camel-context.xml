@@ -56,11 +56,11 @@
     <http-conf:conduit name="http://localhost:8092/.*">
         <http-conf:client Connection="Keep-Alive"
                       MaxRetransmits="1"
-                      AllowChunking="false" />
+                      AllowChunking="true" />
     </http-conf:conduit>
 
     <bean id="shutdown" class="org.apache.camel.impl.DefaultShutdownStrategy">  
-        <property name="timeout" value="10"/>
+        <property name="timeout" value="30"/>
     </bean> 
     
     <camelContext id="camel" xmlns="http://camel.apache.org/schema/blueprint">
