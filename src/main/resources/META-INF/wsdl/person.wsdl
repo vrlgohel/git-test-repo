@@ -23,7 +23,7 @@
 	xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
 	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns:tns="http://redhat.com/"
+	xmlns:tns="http://servicemix.apache.org/samples/wsdl-first"
 	xmlns:typens="http://servicemix.apache.org/samples/wsdl-first/types"
 	targetNamespace="http://servicemix.apache.org/samples/wsdl-first">
 
