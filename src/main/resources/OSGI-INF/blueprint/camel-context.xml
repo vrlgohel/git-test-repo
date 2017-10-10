@@ -33,9 +33,6 @@
         <camelcxf:inInterceptors>
             <bean class="org.apache.cxf.interceptor.LoggingInInterceptor"/>
         </camelcxf:inInterceptors>
-        <camelcxf:outInterceptors>          
-            <bean class="org.apache.cxf.interceptor.LoggingOutInterceptor"/>
-        </camelcxf:outInterceptors>
     </camelcxf:cxfEndpoint>
 
     <camelcxf:cxfEndpoint id="invokerEndpoint"
@@ -66,6 +63,7 @@
     <camelContext id="camel" xmlns="http://camel.apache.org/schema/blueprint">
         <route>
             <from uri="cxf:bean:proxyEndpoint"/>
+            <log message="Hello.. in the route .."/>
             <to uri="cxf:bean:invokerEndpoint"/>
         </route>
     </camelContext>
